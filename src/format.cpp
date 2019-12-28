@@ -19,12 +19,8 @@ string Format::ElapsedTime(long seconds) {
     int second = seconds % 60;
 
     std::stringstream ss;
-    try{
     ss << std::setfill('0') << std::setw(2) << hour << ":"
         << std::setfill('0') << std::setw(2) << minute << ":"
         << std::setfill('0') << std::setw(2) << second;
     return ss.str();
-    } catch (...) {
-        return "00:00:00";
-    }
     }

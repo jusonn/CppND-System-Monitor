@@ -7,14 +7,8 @@ class Processor {
 
   // TODO: Declare any necessary private members
  private:
- long prev_user_;
- long prev_nice_;
- long prev_system_;
- long prev_idle_;
- long prev_iowait_;
- long prev_irq_;
- long prev_softirq_;
- long prev_steal_;
+ long prevTotal_;
+ long prevIdle_;
 };
 
 #endif
